@@ -27,13 +27,15 @@ displayName="Better Impaling Forge" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="better_impaling_forge.png" #optional
+logoFile="bif_icon.png" #optional
 # A text field displayed in the mod UI
 credits="Thanks to Kunkun" #optional
 # A text field displayed in the mod UI
 authors="EricCqh66" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
+A simple mod to change the way impaling enchantment works.
+
 1
   1
     4

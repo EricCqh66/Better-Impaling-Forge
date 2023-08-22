@@ -5,12 +5,16 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        // 添加 MixinGradle 插件
+        classpath 'org.spongepowered:mixingradle:0.7.+'
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
+// 应用 MixinGradle 插件
+apply plugin: 'org.spongepowered.mixin'
 
 version = '1.16.5-2.0.0'
 group = 'com.ericcqh66.better_impaling_forge' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
@@ -137,6 +141,16 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
+    // 应用 Mixin AP
+    annotationProcessor 'org.spongepowered:mixin:0.8.4:processor'
+}
+
+mixin {
+    // MixinGradle 设置
+    add sourceSets.main, 'mixins.better_impaling_forge.refmap.json'
+    config 'mixins.better_impaling_forge.json'
+    // AP 设置
+    // quiet
 }
 
 // Example for how to get properties into the manifest for reading by the runtime..

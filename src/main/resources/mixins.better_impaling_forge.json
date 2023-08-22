@@ -1,0 +1,19 @@
+{
+    "required": true,
+    "package": "com.ericcqh66.better_impaling_forge.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "minVersion": "0.8",
+    "refmap": "mixins.better_impaling_forge.refmap.json",
+    "plugin": "com.ericcqh66.better_impaling_forge.mixin.MixinPlugin",
+    "mixins": [
+        "ImpalingEnchantmentMixin",
+        "PlayerEntityMixin",
+        "TridentEntityMixin"
+    ],
+    "client": [
+
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

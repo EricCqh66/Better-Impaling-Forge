@@ -1,2 +1,2 @@
-I'm not sure if I will keep updating the mod or not :P
-idk lol
+A simple mod to change the way impaling enchantment works.
+Thank you for using my mod! :D

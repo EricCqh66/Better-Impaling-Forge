@@ -16,6 +16,6 @@ public abstract class TridentImpalerEnchantmentMixin {
         cancellable = true
     )
     private void getDamageBonusMixin(int p_45235_, MobType p_45236_, CallbackInfoReturnable<Float> cir) {
-        cir.setReturnValue(BetterImpalingForge.is_in_water_or_rain ? (float)p_45235_ * 2.5F : 0.0F);
+        cir.setReturnValue(BetterImpalingForge.is_in_water_or_rain || p_45236_ == MobType.WATER ? (float)p_45235_ * 2.5F : 0.0F);
     }
 }

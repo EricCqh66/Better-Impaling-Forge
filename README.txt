@@ -1,2 +1,2 @@
-A simple mod to change the way impaling enchantment works.
+A simple mod to improve the way Impaling enchantment works.
 Thank you for using my mod! :D
